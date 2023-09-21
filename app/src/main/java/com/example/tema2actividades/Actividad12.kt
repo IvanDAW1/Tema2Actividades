@@ -7,7 +7,7 @@ fun main() {
     println("Dime el segundo numero")
     val num2 = readlnOrNull()?.toInt() ?: 0
 
-    if (esMayorQue(num1, num2)) {
+    if ((num1 esMayorQue2 num2)) {
         println("El primer numero es mayor que el segundo")
     } else {
         println("El segundo numero es mayor que el primero")
@@ -15,9 +15,6 @@ fun main() {
 
 }
 
-fun esMayorQue(num1: Int, num2: Int): Boolean {
-
-    if (num1 > num2)
-        return true;
-    return false;
+infix fun Int.esMayorQue2(num2: Int): Boolean{
+    return this > num2;
 }

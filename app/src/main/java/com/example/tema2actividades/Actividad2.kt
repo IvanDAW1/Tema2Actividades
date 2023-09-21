@@ -14,7 +14,10 @@ fun main() {
 
     val pesoMedio = (peso1 + peso2 + peso3) / 3;
 
-    val numeroRedondeado = String.format("%.2f", pesoMedio)
+    val numeroRedondeado = Math.round(pesoMedio * 100.0)/100.0
+
+    //val numeroRedondeado = String.format("%.2f", pesoMedio)
+
     println("Peso medio: $pesoMedio")
     println("Número redondeado a 2 decimales: $numeroRedondeado")
 

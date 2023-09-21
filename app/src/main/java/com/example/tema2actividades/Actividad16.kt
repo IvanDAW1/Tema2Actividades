@@ -7,7 +7,7 @@ fun main() {
     var distintos = 0
 
     for (i in 0 until 10) {
-        println("Dime el numero ${i+1}")
+        println("Dime el numero ${i + 1}")
         numero = readLine()?.toInt() ?: 0
 
         when (numero) {

@@ -8,7 +8,7 @@ fun main() {
     var total = 0;
 
     for (i in 0 until arreglo.size) {
-        println("Dime el valor del elemento ${i+1} del array")
+        println("Dime el valor del elemento ${i + 1} del array")
         arreglo[i] = readLine()?.toInt() ?: 0
 
     }
